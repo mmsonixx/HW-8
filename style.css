@@ -1,15 +1,10 @@
-.text-box {
-    h3{
-        color: pink;
+.text-box:focus  {
+      color: rgb(163, 105, 175);
     }
     
-}
 .yellow {
     color: yellow;
 }
 #greycol {
     color: grey;
-}
-div[class="text-box"]+h3 {
-    color: pink;
 }
