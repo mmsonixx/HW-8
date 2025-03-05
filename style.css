@@ -1,5 +1,6 @@
-.text-box:focus  {
-      color: rgb(163, 105, 175);
+/* Exercise 1 */
+.text-box:nth-child(2)  {
+      color: pink;
     }
     
 .yellow {
@@ -7,4 +8,33 @@
 }
 #greycol {
     color: grey;
+}
+/* Exercise 2 */
+.menu:active {
+    color: red;
+}
+.menu:visited {
+    text-decoration: none;
+    color: green;
+}
+
+.lessons__title {
+}
+.lessons__container {
+}
+.monday__container {
+    background-color: rgb(184, 146, 146);
+     cursor: text;
+}
+.monday__title:hover {
+    color: rgb(219, 84, 84);
+}
+.monday__list {
+}
+.monday__item {
+}
+.monday__text {
+    font-size: 20px;
+    margin-bottom: 1px;
+    margin-top: 1px;
 }
