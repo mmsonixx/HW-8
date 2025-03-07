@@ -1,13 +1,18 @@
 /* Exercise 1 */
-.text-box:nth-child(2)  {
-      color: pink;
-    }
-    
+.text-box > h3:first-child {
+  color: pink;
+}
 .yellow {
-    color: yellow;
+  color: yellow;
 }
 #greycol {
-    color: grey;
+  color: grey;
+}
+div > p:only-child {
+  color: red;
+}
+div > p:nth-child(7) {
+  color: green;
 }
 /* Exercise 2 */
 .menu:active {
@@ -18,23 +23,106 @@
     color: green;
 }
 
-.lessons__title {
+.monday__title {
+   color: rgb(63, 155, 155);
 }
-.lessons__container {
+.logo__monday {
+    color: burlywood;
 }
-.monday__container {
-    background-color: rgb(184, 146, 146);
-     cursor: text;
+.monday__list > li:nth-child(even) {
+  color: rgb(63, 155, 155);
 }
-.monday__title:hover {
-    color: rgb(219, 84, 84);
+.monday__list > li:nth-child(odd) {
+  color: rgb(92, 175, 89);
 }
-.monday__list {
+
+.monday__list > li:hover,
+.monday__list > li:focus {
+  background-color: white;
+  color: red;
+  cursor: pointer;
 }
-.monday__item {
+.tuesday__title {
+     color: rgb(150, 82, 82); 
 }
-.monday__text {
-    font-size: 20px;
-    margin-bottom: 1px;
-    margin-top: 1px;
+
+.tuesday__logo {
+      color: rgb(216, 147, 69);
+}
+.tuesday__list > li:nth-child(2n + 3) {
+  color: rgb(150, 82, 82);
+}
+.tuesday__list > li:nth-child(-n + 2) {
+  color: rgb(216, 147, 69);
+}
+.tuesday__list > li:nth-child(2n + 4) {
+  color: rgb(61, 29, 70);
+}
+.tuesday__list > li:hover,
+.tuesday__list > li:focus {
+  background-color: white;
+  color: rgb(248, 8, 0);
+  cursor: pointer;
+}
+
+.wednesday__title {
+    color: rgb(220, 247, 146);
+}
+.wednesday__logo {
+        color: rgb(144, 214, 241);
+}
+.wednesday__list > li:first-child {
+    color: rgb(144, 214, 241);
+}
+
+.wednesday__list > li:nth-child(n + 2) {
+    color: rgb(220, 247, 146);
+}
+.wednesday__list > li:last-child {
+    color: rgb(205, 123, 243);
+}
+.wednesday__list > li:hover, .wednesday__list > li:focus {
+    background-color: white;
+    color: rgb(241, 0, 0);
+    cursor:default
+}
+.thursday__title {
+    color: rgb(205, 148, 228);
+}
+.thursday__logo {
+      color: rgb(134, 198, 253);
+}
+.thursday__list{
+    color: rgb(245, 1, 1);
+} 
+.thursday__list> li:nth-child(-n + 6) {
+color: rgb(205, 148, 228);
+}
+.thursday__list> li:nth-child(-n + 2) {
+    color: rgb(134, 198, 253);
+}
+.thursday__list> li:hover, .thursday__list> li:focus{
+    background-color: black;
+    color: rgb(60, 211, 29);
+    cursor:default;
+}
+.friday__title {
+       color: rgb(71, 71, 197);
+}
+.friday__logo {
+        color: rgb(66, 192, 192);
+}
+.friday__list > li:nth-child(-n+6){
+    color:green;
+}
+.friday__list > li:nth-child(2n){
+    color: rgb(71, 71, 197);
+}
+.friday__list > li:nth-child(3n){
+    color: rgb(66, 192, 192);
+}
+.friday__list > li:hover, .friday__list > li:focus{
+    background-color: yellow;
+    color: black;
+    cursor: default;
 }
